@@ -19,6 +19,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        "bg-color": "#B68C5A",
+                        "text-color": "#707070",
                     }
                 }
             }
@@ -28,7 +30,8 @@
         .font-poppins {
             font-family: 'Poppins', sans-serif;
         }
-        .font-eb{
+
+        .font-eb {
             font-family: 'EB Garamond', serif;
         }
     </style>
@@ -36,7 +39,63 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="max-w-screen-xl mx-auto my-12">
+        <div class="navbar bg-base-100 mb-10 flex flex-col md:flex-row">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-text-color">
+                        <li><a>Home</a></li>
+                        <li><a>Service <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center">
+                    <img class="w-12" src="./images/business.png" alt="">
+                    <a class="btn btn-ghost normal-case text-3xl font-eb font-extrabold">Justice</a>
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex text-text-color">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Service <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn rounded-lg bg-bg-color capitalize text-white text-xl mt-5 md:mt-0">Free Consultation</a>
+            </div>
+        </div>
+        <div class="hero min-h-[calc(100vh-108px)]"
+            style="background-image: url(./images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md md:max-w-lg">
+                    <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but
+                        the majority have suffered alteration in some form, by injected humour.</p>
+                    <div class="form-control">
+                        <label class="flex items-center justify-center gap-5">
+                            <input type="text" placeholder="Search your services" class="input md:w-[500px]" />
+                            <span class="capitalize text-2xl text-white bg-bg-color px-5 py-2 .font-poppins rounded-lg font-semibold">search</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
     <main></main>
     <footer></footer>
 
